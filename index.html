@@ -6,7 +6,19 @@
 
 </head>
 <body>
-<img src="pexels-nout-gons-378570.jpg">
+	<img id="myImage" src="" alt="Random Image">
+	<script>
+		var images = [
+			"pexels-nadin-sh-16266748.jpg",
+			"pexels-danik-prihodko-15983836.jpg",
+			"pexels-elina-volkova-16373378.jpg",
+      "pexels-kokorevas-15986570.jpg",
+      "pexels-mathilde-langevin-10752156.jpg"
+		];
+		var randomIndex = Math.floor(Math.random() * images.length);
+		var randomImage = images[randomIndex];
+		document.getElementById("myImage").src = randomImage;
+	</script>
   
 </body>
 
